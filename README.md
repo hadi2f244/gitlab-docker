@@ -58,7 +58,7 @@ gitlab-docker
 前面生成破解密钥对的时候，已经把公钥写入 Gitlab 容器后台了，还需要把私钥通过前端上传到 Gitlab 完成破解：
 
 - 密钥对生成到 [`./gitlab/keys/`](gitlab/keys/) 目录，复制其下 `.gitlab-license` 的内容（私钥）
-- 使用 root 用户打开 [http://127.0.0.1/admin/license/new](http://127.0.0.1/admin/license/new) 页面
+- 使用 root 用户打开 [http://127.0.0.1/admin/license/new](http://127.0.0.1/admin/application_settings/general) 页面
 - 选择 `Enter license key` 并粘贴私钥，点击 `Upload license` 按钮即可完成破解
 
 

@@ -5,7 +5,8 @@
 #   https://hub.docker.com/r/gitlab/gitlab-ee/tags
 # -----------------------------------------------------------------------------
 
-FROM gitlab/gitlab-ee:13.2.0-ee.0
+FROM gitlab/gitlab-ee:17.10.0-ee.0
+# FROM gitlab/gitlab-ee:13.2.0-ee.0
 # FROM gitlab/gitlab-ee:13.8.0-ee.0
 # FROM gitlab/gitlab-ee:13.9.0-ee.0
 

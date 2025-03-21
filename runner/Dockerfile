@@ -9,6 +9,6 @@ RUN apt-get clean && \
 # 替换gem国内源
 #RUN gem sources --add http://gems.ruby-china.com/ --remove https://rubygems.org/ && \
 #    gem install bundler
-RUN gem install bundler
+RUN gem install bundler -v 2.4.22
 
 RUN usermod -a -G sudo gitlab-runner

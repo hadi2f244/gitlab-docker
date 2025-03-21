@@ -11,7 +11,7 @@ FROM gitlab/gitlab-ee:17.10.0-ee.0
 # FROM gitlab/gitlab-ee:13.9.0-ee.0
 
 ADD ./keys/license_key.pub /opt/gitlab/embedded/service/gitlab-rails/.license_encryption_key.pub
-# RUN sed -i "s@|| STARTER_PLAN@|| ULTIMATE_PLAN@g" /opt/gitlab/embedded/service/gitlab-rails/ee/app/models/license.rb
+RUN sed -i "s@|| STARTER_PLAN@|| ULTIMATE_PLAN@g" /opt/gitlab/embedded/service/gitlab-rails/ee/app/models/license.rb
 # RUN gitlab-ctl reconfigure
 
 EXPOSE 443
